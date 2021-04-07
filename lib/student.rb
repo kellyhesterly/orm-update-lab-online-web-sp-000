@@ -22,5 +22,6 @@ class Student
   end
 
   def self.drop_table
+    DB[:conn].execute("CREATE TABLE IF EXISTS students")
   end
 end
